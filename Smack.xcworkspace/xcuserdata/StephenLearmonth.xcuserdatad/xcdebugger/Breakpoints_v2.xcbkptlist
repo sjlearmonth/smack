@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/Socket.IO-Client-Swift/Source/SocketIO/Client/SocketIOClient.swift"
+            timestampString = "539277708.3658251"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "SocketIOClient"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SocketIO.SocketIOClient.(logType in _6AFD7ED42397504180F5E7764B63DF4D).getter : Swift.String"
+                  moduleName = "SocketIO"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/StephenLearmonth/Desktop/Smack/Pods/Socket.IO-Client-Swift/Source/SocketIO/Client/SocketIOClient.swift"
+                  timestampString = "539618748.7000411"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "271">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SocketIO.SocketIOClient.(logType in _6AFD7ED42397504180F5E7764B63DF4D).setter : Swift.String"
+                  moduleName = "SocketIO"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/StephenLearmonth/Desktop/Smack/Pods/Socket.IO-Client-Swift/Source/SocketIO/Client/SocketIOClient.swift"
+                  timestampString = "539618748.703684"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "191">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SocketIO.SocketIOClient.init(manager: SocketIO.SocketManagerSpec, nsp: Swift.String) -&gt; SocketIO.SocketIOClient"
+                  moduleName = "SocketIO"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/StephenLearmonth/Desktop/Smack/Pods/Socket.IO-Client-Swift/Source/SocketIO/Client/SocketIOClient.swift"
+                  timestampString = "539618748.706447"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "1014">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
