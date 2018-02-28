@@ -19,6 +19,7 @@
 		C49185F82024C0B4007B5E29 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49185F72024C0B4007B5E29 /* ChannelVC.swift */; };
 		C4A4ED4A2028A0E3009C958F /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A4ED492028A0E3009C958F /* GradientView.swift */; };
 		C4A8D66A2024CC500032E275 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A8D6692024CC500032E275 /* SWRevealViewController.m */; };
+		C4CD99F820470676005404A5 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CD99F720470676005404A5 /* AuthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		C4A8D6682024CC500032E275 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		C4A8D6692024CC500032E275 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		C4A8D66B2024CC700032E275 /* Smack-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Smack-Bridging-Header.h"; sourceTree = "<group>"; };
+		C4CD99F720470676005404A5 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		CC4BF49D87433E718E418E84 /* Pods-Smack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,6 +94,7 @@
 		C49185DA2024AE5D007B5E29 /* Smack */ = {
 			isa = PBXGroup;
 			children = (
+				C4CD99F620470656005404A5 /* Services */,
 				C453D7292028B689008C9118 /* Utilities */,
 				C49185F42024C07C007B5E29 /* Model */,
 				C49185F32024C075007B5E29 /* View */,
@@ -140,6 +143,14 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		C4CD99F620470656005404A5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C4CD99F720470676005404A5 /* AuthService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		EE48781500CCCE039D75411D /* Frameworks */ = {
@@ -289,6 +300,7 @@
 				C49185F82024C0B4007B5E29 /* ChannelVC.swift in Sources */,
 				C49185F62024C0A2007B5E29 /* ChatVC.swift in Sources */,
 				C453D72F2028C01C008C9118 /* CreateAccountVC.swift in Sources */,
+				C4CD99F820470676005404A5 /* AuthService.swift in Sources */,
 				C4A4ED4A2028A0E3009C958F /* GradientView.swift in Sources */,
 				C453D72D2028BD43008C9118 /* LoginVC.swift in Sources */,
 				C49185DC2024AE5D007B5E29 /* AppDelegate.swift in Sources */,
