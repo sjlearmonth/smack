@@ -19,6 +19,7 @@
 		C49185F82024C0B4007B5E29 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49185F72024C0B4007B5E29 /* ChannelVC.swift */; };
 		C4A4ED4A2028A0E3009C958F /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A4ED492028A0E3009C958F /* GradientView.swift */; };
 		C4A8D66A2024CC500032E275 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A8D6692024CC500032E275 /* SWRevealViewController.m */; };
+		C4B0BDBF20504D89006FDD4A /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B0BDBE20504D89006FDD4A /* CircleImage.swift */; };
 		C4CD99F820470676005404A5 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CD99F720470676005404A5 /* AuthService.swift */; };
 		C4CD99FA204DA196005404A5 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CD99F9204DA196005404A5 /* RoundedButton.swift */; };
 		C4CD99FC204EF8C3005404A5 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CD99FB204EF8C3005404A5 /* UserDataService.swift */; };
@@ -44,6 +45,7 @@
 		C4A8D6682024CC500032E275 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		C4A8D6692024CC500032E275 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		C4A8D66B2024CC700032E275 /* Smack-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Smack-Bridging-Header.h"; sourceTree = "<group>"; };
+		C4B0BDBE20504D89006FDD4A /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		C4CD99F720470676005404A5 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		C4CD99F9204DA196005404A5 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		C4CD99FB204EF8C3005404A5 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				C4A4ED492028A0E3009C958F /* GradientView.swift */,
 				C4CD99F9204DA196005404A5 /* RoundedButton.swift */,
 				C4CD99FF20502C15005404A5 /* AvatarCell.swift */,
+				C4B0BDBE20504D89006FDD4A /* CircleImage.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				C49185F82024C0B4007B5E29 /* ChannelVC.swift in Sources */,
 				C4CD99FE205018CF005404A5 /* AvatarPickerVC.swift in Sources */,
 				C4CD99FA204DA196005404A5 /* RoundedButton.swift in Sources */,
+				C4B0BDBF20504D89006FDD4A /* CircleImage.swift in Sources */,
 				C49185F62024C0A2007B5E29 /* ChatVC.swift in Sources */,
 				C4CD99FC204EF8C3005404A5 /* UserDataService.swift in Sources */,
 				C453D72F2028C01C008C9118 /* CreateAccountVC.swift in Sources */,

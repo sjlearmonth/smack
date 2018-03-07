@@ -70,7 +70,7 @@
                                     <action selector="loginBtnPressed:" destination="CfP-mY-RJk" eventType="touchUpInside" id="npp-Jp-Lo3"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="0HY-lJ-Fga">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="0HY-lJ-Fga" customClass="CircleImage" customModule="Smack" customModuleProvider="target">
                                 <rect key="frame" x="16" y="572" width="75" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="JBT-t9-NQg"/>
@@ -244,28 +244,12 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k4X-Mb-lpc">
-                                <rect key="frame" x="16" y="441" width="251" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="251" id="Mug-xS-DZr"/>
-                                    <constraint firstAttribute="height" constant="30" id="PmY-Tb-jx2"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
-                                <state key="normal" title="Generate background color">
-                                    <color key="titleColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="createAccountBtnPressed:" destination="SJ1-bW-JyJ" eventType="touchUpInside" id="QLZ-ed-QmE"/>
-                                    <action selector="pickBGColorPressed:" destination="kiQ-9F-gvl" eventType="touchUpInside" id="9Gy-Mg-4q1"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="SEy-jP-8DS" firstAttribute="centerX" secondItem="IEw-MI-au0" secondAttribute="centerX" id="20S-zj-d9L"/>
                             <constraint firstAttribute="trailingMargin" secondItem="AGX-cq-4Md" secondAttribute="trailing" id="6GI-gl-ZKP"/>
                             <constraint firstItem="xdm-q8-4rS" firstAttribute="top" secondItem="czk-Us-q9R" secondAttribute="bottom" constant="40" id="NgE-SP-x8Q"/>
-                            <constraint firstItem="k4X-Mb-lpc" firstAttribute="centerX" secondItem="IEw-MI-au0" secondAttribute="centerX" constant="-46" id="Omg-pc-5Co"/>
                             <constraint firstItem="gYt-s7-cGq" firstAttribute="centerX" secondItem="IEw-MI-au0" secondAttribute="centerX" id="SBW-sq-rUR"/>
                             <constraint firstItem="xdm-q8-4rS" firstAttribute="centerX" secondItem="IEw-MI-au0" secondAttribute="centerX" id="TnS-vK-P7a"/>
                             <constraint firstItem="AGX-cq-4Md" firstAttribute="top" secondItem="3zb-Mi-f5y" secondAttribute="top" constant="8" id="UIo-Ic-zSs"/>
@@ -396,27 +380,50 @@
                                     <action selector="createAccntPressed:" destination="kiQ-9F-gvl" eventType="touchUpInside" id="Dff-Rj-5aR"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="XY8-Ix-fLN">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="XY8-Ix-fLN" customClass="CircleImage" customModule="Smack" customModuleProvider="target">
                                 <rect key="frame" x="137.5" y="299" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="cpF-JJ-lBK"/>
                                     <constraint firstAttribute="width" constant="100" id="qBZ-pV-8lA"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4e-tP-4Ib">
+                                <rect key="frame" x="62" y="437" width="251" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="2mO-uj-0jg"/>
+                                    <constraint firstAttribute="height" constant="30" id="4sI-sS-zDn"/>
+                                    <constraint firstAttribute="width" constant="251" id="eG4-LY-GLT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                <state key="normal" title="Generate background color">
+                                    <color key="titleColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="createAccountBtnPressed:" destination="SJ1-bW-JyJ" eventType="touchUpInside" id="UCZ-Gc-bnr"/>
+                                    <action selector="pickBGColorPressed:" destination="kiQ-9F-gvl" eventType="touchUpInside" id="Kez-yU-jCL"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="ZL4-fs-Iv6">
+                                <rect key="frame" x="177.5" y="223.5" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="zT6-mk-p6n" firstAttribute="centerX" secondItem="fGe-oq-wx0" secondAttribute="centerX" id="4Qs-8v-qpB"/>
                             <constraint firstItem="mqU-vD-xh6" firstAttribute="centerX" secondItem="fGe-oq-wx0" secondAttribute="centerX" id="5Dv-g7-0Oq"/>
                             <constraint firstItem="bY0-JM-AdZ" firstAttribute="top" secondItem="JOs-zr-d7O" secondAttribute="top" constant="8" id="BSX-Vk-GXp"/>
+                            <constraint firstItem="J4e-tP-4Ib" firstAttribute="centerX" secondItem="fGe-oq-wx0" secondAttribute="centerX" id="EAf-Bz-4Vq"/>
                             <constraint firstItem="JOs-zr-d7O" firstAttribute="bottom" secondItem="DbP-oE-eFL" secondAttribute="bottom" constant="20" id="Fvu-80-S8f"/>
+                            <constraint firstItem="J4e-tP-4Ib" firstAttribute="top" secondItem="zT6-mk-p6n" secondAttribute="bottom" constant="8" id="RSY-7O-rzz"/>
                             <constraint firstItem="XY8-Ix-fLN" firstAttribute="centerX" secondItem="fGe-oq-wx0" secondAttribute="centerX" id="RdC-JS-014"/>
                             <constraint firstItem="Ey5-Xi-f9X" firstAttribute="centerX" secondItem="fGe-oq-wx0" secondAttribute="centerX" id="SHo-aI-kXz"/>
+                            <constraint firstItem="ZL4-fs-Iv6" firstAttribute="centerX" secondItem="fGe-oq-wx0" secondAttribute="centerX" id="SxT-tR-PfO"/>
                             <constraint firstItem="zT6-mk-p6n" firstAttribute="top" secondItem="XY8-Ix-fLN" secondAttribute="top" id="WgS-qF-TpV"/>
                             <constraint firstItem="zT6-mk-p6n" firstAttribute="width" secondItem="XY8-Ix-fLN" secondAttribute="width" id="YSr-Qj-vUs"/>
                             <constraint firstItem="bY0-JM-AdZ" firstAttribute="trailing" secondItem="fGe-oq-wx0" secondAttribute="trailingMargin" id="ZcS-Ou-DE0"/>
                             <constraint firstItem="mqU-vD-xh6" firstAttribute="top" secondItem="Ey5-Xi-f9X" secondAttribute="bottom" constant="40" id="cZI-qb-u1q"/>
                             <constraint firstItem="DbP-oE-eFL" firstAttribute="centerX" secondItem="fGe-oq-wx0" secondAttribute="centerX" id="jVK-bO-Cyi"/>
+                            <constraint firstItem="ZL4-fs-Iv6" firstAttribute="centerY" secondItem="fGe-oq-wx0" secondAttribute="centerY" constant="-100" id="ldu-Vl-9DU"/>
                             <constraint firstItem="Ey5-Xi-f9X" firstAttribute="top" secondItem="JOs-zr-d7O" secondAttribute="top" constant="40" id="pbI-yp-RRT"/>
                             <constraint firstItem="XY8-Ix-fLN" firstAttribute="top" secondItem="mqU-vD-xh6" secondAttribute="bottom" constant="40" id="vlx-y5-gSu"/>
                         </constraints>
@@ -425,6 +432,7 @@
                     <connections>
                         <outlet property="emailTxt" destination="lre-QP-QBi" id="now-tv-D5q"/>
                         <outlet property="passTxt" destination="s7I-3t-1hQ" id="G3Z-gG-Vig"/>
+                        <outlet property="spinner" destination="ZL4-fs-Iv6" id="VbD-06-DVQ"/>
                         <outlet property="userImg" destination="XY8-Ix-fLN" id="PzC-rW-hIt"/>
                         <outlet property="usernameTxt" destination="PHP-e2-2Iu" id="8HU-D1-sG0"/>
                         <segue destination="xTx-2i-P7p" kind="unwind" identifier="unwindToChannel" unwindAction="prepareForUnwindWithSegue:" id="Pps-Kc-vXm"/>
