@@ -516,7 +516,7 @@ open class SocketManager : NSObject, SocketManagerSpec, SocketParsable, SocketDa
         if let socket = nsps[nsp] {
             return socket
         }
-
+print("Got here!")
         let client = SocketIOClient(manager: self, nsp: nsp)
 
         nsps[nsp] = client

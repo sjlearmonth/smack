@@ -12,23 +12,24 @@ import SocketIO
 class SocketService: NSObject {
     
     static let instance = SocketService()
+    var socket: SocketIOClient!
     
     override init() {
         super.init()
+        let manager = SocketManager(socketURL: URL(string:BASE_URL)!)
+        socket = manager.socket(forNamespace: "/swift")
     }
     
-//    var socket : SocketIOClient = SocketIOClient(manager: URL(string: BASE_URL) as! SocketManagerSpec, nsp: "/Swift" )
-    var socket: SocketIOClient = SocketIOClient(manager: URL(string: BASE_URL)! as! SocketManagerSpec, nsp: "")
     func establishConnection() {
         socket.connect()
     }
     
     func closeConnection() {
-        socket.disconnect()        
+        socket.disconnect()
     }
     
     func addChannel(channelName: String, channelDescription: String, completion: @escaping CompletionHandler) {
-        socket.emit("NewChannel", channelName, channelDescription)
+        socket.emit("newChannel", channelName, channelDescription)
         completion(true)
     }
     

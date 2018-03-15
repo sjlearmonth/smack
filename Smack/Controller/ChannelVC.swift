@@ -22,7 +22,7 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        self.revealViewController().rearViewRevealWidth = self.view.frame.width - 60
+        self.revealViewController().rearViewRevealWidth = self.view.frame.size.width - 60
         NotificationCenter.default.addObserver(self, selector: #selector(ChannelVC.userDataDidChange(_:)), name: NOTIF_USER_DID_CHANGE, object: nil)
         
         SocketService.instance.getChannel { (success) in
