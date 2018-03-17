@@ -41,7 +41,7 @@ class AddChannelVC: UIViewController {
         bgView.addGestureRecognizer(closeTouch)
         
         nameTxt.attributedPlaceholder = NSAttributedString(string: "name", attributes: [NSAttributedStringKey.foregroundColor : smackPurplePlaceholder])
-        chanDesc.attributedPlaceholder = NSAttributedString(string: "desription", attributes: [NSAttributedStringKey.foregroundColor : smackPurplePlaceholder]
+        chanDesc.attributedPlaceholder = NSAttributedString(string: "description", attributes: [NSAttributedStringKey.foregroundColor : smackPurplePlaceholder]
         )
     }
     

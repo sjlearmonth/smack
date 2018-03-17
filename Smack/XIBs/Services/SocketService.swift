@@ -16,8 +16,9 @@ class SocketService: NSObject {
     
     override init() {
         super.init()
-        let manager = SocketManager(socketURL: URL(string:BASE_URL)!)
-        socket = manager.socket(forNamespace: "/swift")
+        let manager = SocketManager(socketURL: URL(string: BASE_URL)!)
+        self.socket = manager.socket(forNamespace: "/")
+        self.socket.connect()
     }
     
     func establishConnection() {
