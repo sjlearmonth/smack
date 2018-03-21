@@ -15,7 +15,7 @@ class MessageService {
     
     var channels = [Channel]()
     var messages = [Message]()
-    var selectedchannel : Channel?
+    var selectedChannel : Channel?
     
     
     func findAllChannel(completion: @escaping CompletionHandler) {
