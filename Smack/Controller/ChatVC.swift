@@ -20,6 +20,10 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         view.bindToKeyboard()
         tableView.delegate = self
         tableView.dataSource = self
+        
+        tableView.estimatedRowHeight = 80
+        tableView.rowHeight = UITableViewAutomaticDimension
+        
         let tap = UITapGestureRecognizer(target: self, action: #selector(ChatVC.handleTap))
         view.addGestureRecognizer(tap)
         
@@ -45,6 +49,7 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             onLogingetMessages()
         } else {
             channelNameLbl.text = "Please log In"
+            tableView.reloadData()
         }
     }
     

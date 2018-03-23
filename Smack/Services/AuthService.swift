@@ -76,9 +76,9 @@ class AuthService {
             
             if response.result.error == nil {
                 guard let data = response.data else { return }
-                let json = try? JSON(data: data)
-                self.userEmail = json!["user"].stringValue
-                self.authToken = json!["token"].stringValue
+                let json = try! JSON(data: data)
+                self.userEmail = json["user"].stringValue
+                self.authToken = json["token"].stringValue
                 
                 self.isLoggedIn = true                
                 completion(true)
@@ -132,12 +132,12 @@ class AuthService {
     }
     
     func setUserInfo(data: Data) {
-        let json = try? JSON(data: data)
-        let id = json!["_id"].stringValue
-        let color = json!["avatarColor"].stringValue
-        let avatarName = json!["avatarName"].stringValue
-        let email = json!["email"].stringValue
-        let name = json!["name"].stringValue
+        let json = try! JSON(data: data)
+        let id = json["_id"].stringValue
+        let color = json["avatarColor"].stringValue
+        let avatarName = json["avatarName"].stringValue
+        let email = json["email"].stringValue
+        let name = json["name"].stringValue
         
         UserDataService.instance.setUserData(id: id, Color: color, avatarName: avatarName, email: email, name: name)
     }

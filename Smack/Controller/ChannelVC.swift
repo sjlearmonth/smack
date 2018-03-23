@@ -22,7 +22,9 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+    
         self.revealViewController().rearViewRevealWidth = self.view.frame.size.width - 60
+        
         NotificationCenter.default.addObserver(self, selector: #selector(ChannelVC.userDataDidChange(_:)), name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(ChannelVC.channelsLoaded(_:)), name: NOTIF_CHANNELS_LOADED, object: nil)
         
@@ -46,6 +48,7 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     @IBAction func loginBtnPressed(_ sender: Any) {
+        
         if AuthService.instance.isLoggedIn {
             let profile = ProfileVC()
             profile.modalPresentationStyle = .custom
